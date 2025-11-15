@@ -4,6 +4,6 @@
 </head>
 <body>
 	<div>Welcome to in28minutes</div>
-	Welcome to in28minutes
+	<div>Your Name: ${name}</div>
 </body>
 </html>
