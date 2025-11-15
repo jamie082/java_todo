@@ -3,6 +3,6 @@
 <title>Login Controller</title>
 </head>
 <body>
-Welcome to the Login Controller
+Welcome to the login page ${name}
 </body>
 </html>
