@@ -1,8 +1,12 @@
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 
 <html>
+<head>
+<link href="webjars/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+<title>List ToDos Page</title>
+</head>
 	<body>
-		<div>
+		<div class="container">
 			<h1>Your Todos</h1>
 			<table class="table">
 				<thead>
@@ -11,6 +15,7 @@
 						<th>Description</th>
 						<th>Target Date</th>
 						<th>Is Done?</th>
+						<th>Delete?</th>
 					</tr>
 				</thead>
 				<tbody>		
@@ -20,11 +25,14 @@
 							<td>${todo.description}</td>
 							<td>${todo.targetDate}</td>
 							<td>${todo.done}</td>
+							<td><a href="delete-todo?id=${todo.id}" class="btn btn-warning">DELETE ${todo.id}</a></td>
 						</tr>
 					</c:forEach>
 				</tbody>
 			</table>
-
+			<a href="add-todo" class="btn btn-success">Add Todo</a>
+			<script src="webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+			<script src="webjars/jquery/3.6.0/jquery.min.js"></script>
 		</div>
 		
 	</body>
