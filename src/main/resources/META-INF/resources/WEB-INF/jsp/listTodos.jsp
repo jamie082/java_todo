@@ -6,6 +6,7 @@
 <title>List ToDos Page</title>
 </head>
 	<body>
+	<%@ include file="common/navigation.jspf" %>
 		<div class="container">
 			<h1>Your Todos</h1>
 			<table class="table">
